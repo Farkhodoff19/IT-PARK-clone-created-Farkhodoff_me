@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Farkhodoff_me</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="ITPARK Uzbekistan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="Itpark, Startups, Residents, Bpo, IT-center, IT-education, Outsourcing, Robotics"
+    />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://it-park.uz/../favicons/favicon.ico"
+      type="image/png"
+    />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(65076529, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      });
+    </script>
+    <!-- /Yandex.Metrika counter -->
+
+    <link rel="stylesheet" href="./css/libs.css" />
+    <style>
+      html,
+      body {
+        height: 100% !important;
+        overflow: hidden;
+      }
+      #home .line-menu a:hover {
+        color: #7dba29;
+      }
+      .main-page #home .line-menu {
+        top: 10%;
+      }
+      #home .line-menu a:hover .regions {
+        color: #fff;
+      }
+      .main-page #home .main-text {
+        top: -60px;
+      }
+      .main-page .item-link {
+        border-right: 1px solid #7dba29;
+      }
+      .main-page .item-link:last-child {
+        border: none;
+      }
+      .main-page #home {
+        overflow: scroll;
+        overscroll-behavior-y: scroll;
+      }
+      .container-park {
+        position: absolute;
+        width: 100vw;
+        height: 84vh;
+        margin: 30px auto;
+        background: #323232;
+        overflow: hidden;
+        z-index: -5;
+        /* box-shadow: 0 0 25px #2b2628; */
+        /* transform: scale(1.5); */
+        bottom: -19%;
+      }
+
+      .moon {
+        width: 100px;
+        height: 100px;
+        margin: 40px 0 80px 80px;
+        border-radius: 50%;
+        background: #fff8d7;
+        box-shadow: 0 0 70px 70px rgba(255, 248, 216, 0.2);
+      }
+
+      .cloud-container {
+        opacity: 0.6;
+      }
+
+      .cloud,
+      .cloud:before,
+      .cloud:after {
+        border-radius: 35px;
+        background: rgb(145, 133, 132);
+      }
+
+      .cloud {
+        display: inline-block;
+        vertical-align: top;
+        width: 100px;
+        height: 30px;
+        border-radius: 50px 35px 35px 15px;
+        position: relative;
+      }
+
+      .cloud:before,
+      .cloud:after {
+        content: "";
+        display: block;
+        position: absolute;
+      }
+
+      .cloud:before {
+        width: 40px;
+        height: 45px;
+        left: 12px;
+        bottom: 0;
+      }
+
+      .cloud:after {
+        width: 40px;
+        height: 50px;
+        right: 16px;
+        bottom: 0;
+      }
+
+      .cloud:nth-child(1) {
+        position: absolute;
+        top: 180px;
+        left: -450px;
+      }
+
+      .cloud:nth-child(2) {
+        position: absolute;
+        top: 80px;
+        left: -230px;
+      }
+
+      .cloud:nth-child(4) {
+        position: absolute;
+        top: 50px;
+        left: 230px;
+      }
+
+      .cloud:nth-child(5) {
+        position: absolute;
+        top: 140px;
+        right: 100px;
+      }
+
+      .cloud {
+        animation: cloudmove 50s linear infinite backwards;
+      }
+
+      @keyframes cloudmove {
+        0% {
+          transform: translateX(-450px);
+        }
+        100% {
+          transform: translateX(1090px);
+        }
+      }
+
+      .stars {
+        width: 100%;
+      }
+
+      .star {
+        display: inline-block;
+        position: relative;
+        animation: twinkle 7s -1s infinite;
+      }
+
+      .star:nth-child(even) {
+        animation: twinkle 7s 2s infinite;
+      }
+
+      @keyframes twinkle {
+        0% {
+          opacity: 1;
+        }
+        60% {
+          opacity: 0.2;
+        }
+      }
+
+      .star:before,
+      .star:after {
+        content: "";
+        display: block;
+        width: 3px;
+        height: 10px;
+        background: #b0a69b;
+        border-radius: 45%;
+      }
+
+      .star:before {
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 0;
+      }
+
+      .star:after {
+        transform: rotate(45deg);
+      }
+
+      .star:nth-child(1) {
+        transform: translate(60px, -210px);
+      }
+
+      .star:nth-child(2) {
+        transform: translate(180px, -110px);
+      }
+
+      .star:nth-child(3) {
+        transform: translate(210px, -215px);
+      }
+
+      .star:nth-child(4) {
+        transform: translate(370px, -15px);
+      }
+
+      .star:nth-child(5) {
+        transform: translate(440px, 50px);
+      }
+
+      .star:nth-child(6) {
+        transform: translate(440px, -190px);
+      }
+
+      .star:nth-child(7) {
+        transform: translate(-5px, 20px);
+      }
+
+      .train-container {
+        position: absolute;
+        bottom: -40px;
+      }
+
+      .train {
+        width: 1450px;
+        animation: move 10s -1.5s linear infinite forwards;
+      }
+
+      @keyframes move {
+        0% {
+          transform: translateX(-1450px);
+        }
+        100% {
+          transform: translateX(2560px);
+        }
+      }
+
+      .train-car {
+        display: inline-block;
+        vertical-align: top;
+        height: 70px;
+        width: 240px;
+        border: 1px solid #323232;
+        /*border: 1px solid #7dba28;*/
+        border-top: 2px solid #999999;
+        background: #505050;
+        border-radius: 11px;
+        padding-top: 18px;
+        padding-left: 18px;
+        z-index: 555;
+      }
+
+      .head-car,
+      .end-car {
+        width: 210px;
+        border-left: 2px solid #303030;
+        border-top-left-radius: 200px;
+        padding-left: 25px;
+      }
+
+      .end-car {
+        border-top-left-radius: 11px;
+        border-top-right-radius: 200px;
+        padding-left: 10px;
+        padding-right: 25px;
+      }
+
+      .windows,
+      .door {
+        display: inline-block;
+      }
+
+      .windows {
+        width: 80px;
+        height: 50px;
+      }
+
+      .head-car .windows,
+      .end-car .windows {
+        width: 130px;
+      }
+
+      .w-left,
+      .w-right,
+      .head-car-window,
+      .end-car-window {
+        display: inline-block;
+        width: 37px;
+        height: 26px;
+        border-radius: 2px;
+        background: #999999;
+        /*background: #FBEBED;*/
+        /*   vertical-align: top; */
+      }
+
+      .head-car-window,
+      .end-car-window {
+        width: 25px;
+        border-top-left-radius: 25px;
+        margin-right: 15px;
+        position: relative;
+      }
+
+      .end-car-window {
+        border-top-left-radius: inherit;
+        border-top-right-radius: 25px;
+        margin-left: 15px;
+        margin-right: 0;
+      }
+
+      .head-car-window:after,
+      .end-car-window:after {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 26px;
+        background: #fbebed;
+
+        position: absolute;
+        right: -12px;
+      }
+
+      .end-car-window:after {
+        left: -12px;
+      }
+
+      .door {
+        background: #fff;
+        width: 25px;
+        height: 50px;
+        padding: 4px 5px 0;
+        vertical-align: top;
+        margin: 0 5px;
+      }
+
+      .end-car .door {
+        margin: 0 6px;
+      }
+
+      .door:before {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 20px;
+        background: #fbebed;
+      }
+
+      .train-track {
+        position: relative;
+        background: #404040;
+        width: 124vw;
+        height: 40vh;
+      }
+
+      .ledge {
+        height: 20px;
+        width: 100%;
+        /*   background: white; */
+        border-bottom: 3px solid #505050;
+        margin-bottom: 40px;
+      }
+
+      .pillar {
+        overflow-x: hidden;
+      }
+
+      .pillar > div {
+        background: #323232;
+        height: 386px;
+        border-radius: 200px 200px 0 0;
+        display: inline-block;
+      }
+
+      .pillar-middle {
+        border-right: 5px solid #968b8e;
+      }
+
+      .pillar-middle {
+        width: 160px;
+        margin-right: 120px;
+      }
+
+      .pillar-right {
+        width: 180px;
+        border-right-width: 8px;
+      }
+
+      .desc {
+        margin-bottom: 30px;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        color: #d3c5b2;
+        line-height: 1.5;
+      }
+
+      .desc a,
+      .desc a:visited {
+        font-weight: bold;
+        color: #d3c5b2;
+      }
+
+      .main-page .notification-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 2%;
+        z-index: 1050;
+        background: #242526;
+        border-radius: 6px;
+        border-left: 10px solid #7dba29;
+        box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.4);
+        padding: 15px 0;
+      }
+      .main-page .notification-container p {
+        font-size: 17px;
+        line-height: 25px;
+        font-weight: 300 !important;
+      }
+      .main-page .notification-container p b {
+        font-weight: 700 !important;
+        font-size: 20px;
+      }
+      .main-page .mobile-menu {
+        top: 10%;
+      }
+      .main-page .btn-park {
+        background: #7dba29;
+      }
+
+      /* img.gift {
+             position: absolute;
+             top: -53px;
+             width: 210px;
+             z-index: -1;
+         }
+         img.gift.end {
+             position: absolute;
+             top: -40px;
+             width: 173px;
+             z-index: -1;
+             left: 39px;
+         }*/
+
+      @media (max-width: 991px) {
+        .main-page .notification-container {
+          top: 0;
+        }
+        .main-page .notification-container p {
+          font-size: 15px;
+          line-height: 22px;
+        }
+        .main-page .notification-container p b {
+          font-size: 18px;
+        }
+      }
+      @media screen and (max-width: 812px) and (orientation: landscape) {
+        .main-page #home {
+          min-height: 300vh !important;
+          overflow: scroll !important;
+        }
+        .main-page .notification-container {
+          height: auto !important;
+          overflow: scroll !important;
+          top: 0;
+        }
+        .main-page .notification-container p {
+          font-size: 14px;
+          line-height: 20px;
+          margin: 0 0 12px;
+        }
+        .main-page .notification-container p b {
+          font-size: 16px;
+        }
+      }
+      @media (max-width: 767px) {
+        .main-page #home .main-text {
+          top: -40px;
+        }
+        .main-page .notification-container {
+          /*height: 100vh;*/
+          padding: 0 7px;
+        }
+        .main-page .notification-container p {
+          font-size: 14px;
+          line-height: 20px;
+          margin: 0 0 12px;
+        }
+        .main-page .notification-container p b {
+          font-size: 16px;
+        }
+      }
+      @media (max-width: 400px) {
+        .main-page .notification-container p {
+          font-size: 12px;
+          line-height: 17px;
+          margin: 0 0 12px;
+        }
+        .main-page .notification-container p b {
+          font-size: 14px;
+        }
+      }
+      @media (max-width: 360px) {
+        .main-page .notification-container p {
+          font-size: 10px;
+          line-height: 15px;
+          margin: 0 0 10px;
+        }
+        .main-page .notification-container p b {
+          font-size: 12px;
+        }
+        .main-page .notification-container h6 {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="bg-background-fade main-page">
+    <div id="particles-js"></div>
+    <div class="paceDiv">
+      <div class="la-pacman">
+        <div class="itdot-1"></div>
+        <div class="itdot-2"></div>
+        <div class="itdot-3"></div>
+        <div class="itdot-4"></div>
+        <div class="itdot-5"></div>
+        <div class="itdot-6"></div>
+        <div class="shadow"></div>
+      </div>
+    </div>
+    <section
+      id="home"
+      data-color="1"
+      class="p-0 mobile-height position-relative"
+    >
+      <div class="container full-screen position-relative">
+        <div class="slider-typography text-left d-flex">
+          <div class="col-12 col-xl-10 col-md-10 text-center main-text">
+            <h1>START local & GO global</h1>
+          </div>
+        </div>
+      </div>
+      <div class="line-menu">
+        <ul>
+          <li>
+            <i class="far fa-circle"></i
+            ><a href="https://it-park.uz/ru/itpark">IT PARK</a>
+          </li>
+          <li>
+            <i class="far fa-circle"></i
+            ><a href="https://education.it-park.uz/" target="_blank"
+              >IT EDUCATION</a
+            >
+          </li>
+
+          <li>
+            <i class="far fa-circle"></i
+            ><a href="https://it-market.uz/" target="_blank">IT MARKET</a>
+          </li>
+          <li>
+            <i class="far fa-circle"></i
+            ><a href="https://itvisa.uz/" target="_blank">IT VISA</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mobile-menu">
+        <a href="https://it-park.uz/ru/itpark" class="item-link">IT PARK</a>
+        <a
+          href="https://education.it-park.uz/"
+          class="item-link"
+          target="_blank"
+        >
+          IT EDUCATION</a
+        >
+        <a
+          href="https://education.it-park.uz/uz/itcenters#map"
+          target="_blank"
+          class="item-link text-center"
+          >REGIONS</a
+        >
+        <a
+          href="https://it-market.uz/"
+          target="_blank"
+          class="item-link text-center"
+          >IT MARKET</a
+        >
+        <a
+          href="https://itvisa.uz/"
+          target="_blank"
+          class="item-link text-center"
+          >IT VISA</a
+        >
+      </div>
+
+      <div class="container-park">
+        <div class="cloud-container"></div>
+
+        <div class="train-container">
+          <div class="train">
+            <div class="train-car head-car">
+              <div class="windows">
+                <div class="head-car-window"></div>
+                <div class="w-left"></div>
+                <div class="w-right"></div>
+              </div>
+              <div class="door"></div>
+            </div>
+
+            <div class="train-car">
+              <div class="windows">
+                <div class="w-left"></div>
+                <div class="w-right"></div>
+              </div>
+              <div class="door"></div>
+              <div class="windows">
+                <div class="w-left"></div>
+                <div class="w-right"></div>
+              </div>
+            </div>
+
+            <div class="train-car">
+              <div class="windows">
+                <div class="w-left"></div>
+                <div class="w-right"></div>
+              </div>
+              <div class="door"></div>
+              <div class="windows">
+                <div class="w-left"></div>
+                <div class="w-right"></div>
+              </div>
+            </div>
+
+            <div class="train-car">
+              <div class="windows">
+                <div class="w-left"></div>
+                <div class="w-right"></div>
+              </div>
+              <div class="door"></div>
+              <div class="windows">
+                <div class="w-left"></div>
+                <div class="w-right"></div>
+              </div>
+            </div>
+
+            <div class="train-car end-car">
+              <div class="door"></div>
+              <div class="windows">
+                <div class="w-left"></div>
+                <div class="w-right"></div>
+                <div class="end-car-window"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="train-track">
+            <div class="ledge"></div>
+            <div class="pillar">
+              <div class="pillar-middle"></div>
+              <div class="pillar-middle"></div>
+              <div class="pillar-middle"></div>
+              <div class="pillar-middle"></div>
+              <div class="pillar-middle"></div>
+              <div class="pillar-middle"></div>
+              <div class="pillar-middle"></div>
+              <div class="pillar-middle"></div>
+              <div class="pillar-middle"></div>
+              <div class="pillar-middle"></div>
+              <div class="pillar-middle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/front.js"></script>
+  </body>
+</html>
